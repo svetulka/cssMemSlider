@@ -53,3 +53,45 @@ body {
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
   }
+
+  .slide-text {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #000;
+    opacity: 0;
+    margin: 0 10px;
+    position: relative;
+    animation: text-animation 1s ease-in-out 1s 1 normal forwards;
+  }
+
+  .slider-controls {
+    display: flex;
+  }
+
+  .slide-text-and-controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-controls a {
+    margin-right: 10px;
+    display: block;
+  }
+
+  .control {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+    margin: 5px;
+  }
+  .control:hover {
+    background-color: #000;
+    border: 2px solid #000;
+  }
+
+  .control.active {
+    background-color: transparent;
+  }
