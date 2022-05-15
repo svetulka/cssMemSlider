@@ -1,10 +1,27 @@
 body {
     margin: 0;
-}
+  }
 
+  /* animation */
+
+  @keyframes slide-animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes text-animation {
+    from {
+      opacity: 0;
+      bottom:-200px;
+    }
+    to {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
 
  /* main styles */
- .slider-container {
+  .slider-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,25 +113,25 @@ body {
     background-color: transparent;
   }
 
-/* mobile devices styles */
+  /* mobile devices styles */
 
-@media screen and (max-width:767px) {
+  @media screen and (max-width:767px) {
     .slider-controls {
-        text-align: center;
-        order: 0;
-        justify-content: center;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        margin-right: -5px;
+      text-align: center;
+      order: 0;
+      justify-content: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-right: -5px;
     }
 
     .slide-text {
-        order: 1;
-        margin-left: 0;
-        text-align: center;
+      order: 1;
+      margin-left: 0;
+      text-align: center;
     }
 
     .slide-text-and-controls {
-        flex-direction: column;
-        }
-}
+    flex-direction: column;
+    }
+  }
